@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HR.LeaveManagement.Domain\HR.LeaveManagement.Domain.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.1.0" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.7.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Contracts\" />
+    <None Remove="Contracts\Persistence\" />
+    <None Remove="MappingProfiles\" />
+    <None Remove="Features\" />
+    <None Remove="Features\Leavetype\" />
+    <None Remove="Features\Leavetype\Queries\" />
+    <None Remove="Features\Leavetype\Commands\" />
+    <None Remove="Features\Leavetype\Queries\GetAllLeaveTypes\" />
+    <None Remove="Features\Leavetype\Queries\GetLeaveTypeDetails\" />
+    <None Remove="Features\Leavetype\Commands\CreateLeaveType\" />
+    <None Remove="Features\Leavetype\Commands\UpdateLeaveType\" />
+    <None Remove="Features\Leavetype\Commands\DeleteLeaveType\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Contracts\" />
+    <Folder Include="Contracts\Persistence\" />
+    <Folder Include="MappingProfiles\" />
+    <Folder Include="Features\" />
+    <Folder Include="Features\Leavetype\" />
+    <Folder Include="Features\Leavetype\Queries\" />
+    <Folder Include="Features\Leavetype\Commands\" />
+    <Folder Include="Features\Leavetype\Queries\GetAllLeaveTypes\" />
+    <Folder Include="Features\Leavetype\Queries\GetLeaveTypeDetails\" />
+    <Folder Include="Features\Leavetype\Commands\CreateLeaveType\" />
+    <Folder Include="Features\Leavetype\Commands\UpdateLeaveType\" />
+    <Folder Include="Features\Leavetype\Commands\DeleteLeaveType\" />
+  </ItemGroup>
+</Project>
