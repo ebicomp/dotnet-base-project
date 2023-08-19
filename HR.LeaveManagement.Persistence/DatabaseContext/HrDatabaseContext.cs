@@ -31,17 +31,17 @@ namespace HR.LeaveManagement.Persistence.DatabaseContext
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(HrDatabaseContext).Assembly);
-            modelBuilder.Entity<LeaveType>()
-                .HasData(
-                        new LeaveType
-                        {
-                            Id = 1,
-                            Name = "Vacation",
-                            DefaultDays = 30,
-                            DateCreated = DateTime.Now,
-                            LastModified = DateTime.Now
-                        }
-                );
+            //modelBuilder.Entity<LeaveType>()
+            //    .HasData(
+            //            new LeaveType
+            //            {
+            //                Id = 1,
+            //                Name = "Vacation",
+            //                DefaultDays = 30,
+            //                DateCreated = DateTime.Now,
+            //                LastModified = DateTime.Now
+            //            }
+            //    );
             base.OnModelCreating(modelBuilder);
         }
     }
