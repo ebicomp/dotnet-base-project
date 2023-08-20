@@ -27,6 +27,7 @@
     <None Remove="Features\Leavetype\Commands\CreateLeaveType\" />
     <None Remove="Features\Leavetype\Commands\UpdateLeaveType\" />
     <None Remove="Features\Leavetype\Commands\DeleteLeaveType\" />
+    <None Remove="Contracts\Logging\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Contracts\" />
@@ -41,5 +42,6 @@
     <Folder Include="Features\Leavetype\Commands\CreateLeaveType\" />
     <Folder Include="Features\Leavetype\Commands\UpdateLeaveType\" />
     <Folder Include="Features\Leavetype\Commands\DeleteLeaveType\" />
+    <Folder Include="Contracts\Logging\" />
   </ItemGroup>
 </Project>
