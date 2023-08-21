@@ -17,8 +17,16 @@ public class GenericRepository<T> : IGenericRepository<T> where T : BaseDomainEn
 
     public async Task Create(T entity)
     {
-        await _context.AddAsync(entity);
-        await _context.SaveChangesAsync();
+        try
+        {
+            await _context.AddAsync(entity);
+            await _context.SaveChangesAsync();
+        }
+        catch (Exception ex)
+        {
+
+        }
+
     }
 
     public async Task Delete(T entity)
